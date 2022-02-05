@@ -17,6 +17,12 @@ function Search() {
             return await response.json();
         }
     }
+
+    async function handleSearch(evt){
+        const { value } = evt.target;
+        console.log(value);
+        setResult ({result: await fetchData(value)})
+    }
     
 
     return (
@@ -30,7 +36,7 @@ function Search() {
             </div>
             <div className="content">
                 <form action="">
-                    <input type="text" className="search"/>
+                    <input type="text" className="search" onKeyUp={handleSearch} />
                 </form>
             </div>
             <div className="word">
