@@ -5,6 +5,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Deployment link
 Live App [My Encyclopedia App](https://stoic-hawking-39ee9f.netlify.app/). <br /><br />
 
+## Screenshoot
+![my application interface](https://i.imgur.com/Rf6eohH.png)
+
 ## Available Scripts
 
 In the project directory, you can run:
