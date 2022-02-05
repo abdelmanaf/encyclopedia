@@ -20,7 +20,6 @@ function Search() {
 
     async function handleSearch(evt){
         const { value } = evt.target;
-        console.log(value);
         setResult ({result: await fetchData(value)})
     }
     
@@ -40,7 +39,9 @@ function Search() {
                 </form>
             </div>
             <div className="word">
-                {/* Search result component */}
+                <ul>
+                    {result.result && result.result.query.search.map(data => <Word key={data.id} data={data} />)}
+                </ul>
             </div>
         </div>
 
